@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link
+   rel="icon"
+   type="image/png"
+   sizes="32x32"
+   href="./images/favicon-32x32.png"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+ </head>
+ <body>
+  <div class="container">
+   <div class="faq__img--box">
+    <img src="/images/illustration-box-desktop.svg" alt="box-icon" />
+   </div>
+
+   <div class="faq">
+    <div class="faq__img--container">
+     <img
+      src="/images/illustration-woman-online-mobile.svg"
+      alt="online-image"
+      class="faq__woman--mobile"
+     />
+     <img
+      src="/images/bg-pattern-mobile.svg"
+      alt="backgound-pattern"
+      class="faq__bg--mobile"
+     />
+    </div>
+
+    <!-- Accordian -->
+    <div class="accordian">
+     <h1 class="faq__title">FAQ</h1>
+     <ul class="accordian__list">
+      <li class="accordian__question">
+       <button class="accordian__btn">
+        How many team members can I invite?<span
+         ><img
+          class="accordian__arrow"
+          src="/images/icon-arrow-down.svg"
+          alt="icon"
+        /></span>
+       </button>
+       <div class="accordian__answer">
+        <span class="accordian__answer-text"
+         >You can invite up to 2 additional users on the Free plan. There is no
+         limit on team members for the Premium plan.</span
+        >
+       </div>
+      </li>
+      <li class="accordian__question">
+       <button class="accordian__btn">
+        What is the maximum file upload size?<span
+         ><img
+          class="accordian__arrow"
+          src="/images/icon-arrow-down.svg"
+          alt="icon"
+        /></span>
+       </button>
+       <div class="accordian__answer">
+        <span class="accordian__answer-text"
+         >No more than 2GB. All files in your account must fit your allotted
+         storage space.</span
+        >
+       </div>
+      </li>
+      <li class="accordian__question">
+       <button class="accordian__btn">
+        How do I reset my password?<span
+         ><img
+          class="accordian__arrow"
+          src="/images/icon-arrow-down.svg"
+          alt="icon"
+        /></span>
+       </button>
+       <div class="accordian__answer">
+        <span class="accordian__answer-text"
+         >Click “Forgot password” from the login page or “Change password” from
+         your profile page. A reset link will be emailed to you.</span
+        >
+       </div>
+      </li>
+      <li class="accordian__question">
+       <button class="accordian__btn">
+        Can I cancel my subscription?<span
+         ><img
+          class="accordian__arrow"
+          src="/images/icon-arrow-down.svg"
+          alt="icon"
+        /></span>
+       </button>
+       <div class="accordian__answer">
+        <span class="accordian__answer-text"
+         >Yes! Send us a message and we’ll process your request no questions
+         asked.</span
+        >
+       </div>
+      </li>
+      <li class="accordian__question">
+       <button class="accordian__btn">
+        Do you provide additional support?<span
+         ><img
+          class="accordian__arrow"
+          src="/images/icon-arrow-down.svg"
+          alt="icon"
+        /></span>
+       </button>
+       <div class="accordian__answer">
+        <span class="accordian__answer-text"
+         >Chat and email support is available 24/7. Phone lines are open during
+         normal business hours.</span
+        >
+       </div>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+
+  <footer class="footer">
+   Challenge by
+   <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+   >. Coded by <a href="#">Rab Winter</a>.
+  </footer>
+
+  <script src="/app/js/script.js"></script>
+ </body>
+</html>
