@@ -1,0 +1,108 @@
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+
+// FAQ Card
+.faq {
+ min-height: 33.5375rem;
+ width: 20.4375rem;
+ text-align: center;
+ background-color: #fff;
+ border-radius: 25px;
+ margin-top: 6rem;
+ box-shadow: 5px 25px 50px rgba(0, 0, 0, 0.397);
+
+ @include breakpoint-up(large) {
+  min-height: 30.4rem;
+  width: 59.5rem;
+  margin-left: -12rem;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ }
+
+ &__img--container {
+  height: 6.7rem;
+  width: 100%;
+  margin-bottom: 2.125rem;
+  position: relative;
+
+  @include breakpoint-up(large) {
+   height: 100%;
+   position: relative;
+
+   background-image: url("/images/illustration-woman-online-desktop.svg"),
+    url("/images/bg-pattern-desktop.svg");
+   background-position: bottom 65px left -78px, bottom -160px left -569px;
+   background-repeat: no-repeat;
+  }
+ }
+
+ &__woman--mobile {
+  position: relative;
+  bottom: 107px;
+  left: -14px;
+
+  @include breakpoint-up(large) {
+   display: none;
+  }
+ }
+
+ &__bg--mobile {
+  position: relative;
+  bottom: 201px;
+  left: 0px;
+
+  @include breakpoint-up(large) {
+   display: none;
+  }
+ }
+
+ &__img--box {
+  display: none;
+
+  @include breakpoint-up(large) {
+   display: block;
+   position: relative;
+   left: -93px;
+   top: 52px;
+   z-index: 1;
+  }
+ }
+
+ &__title {
+  font-size: 1.925rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+
+  @include breakpoint-up(large) {
+   text-align: left;
+  }
+ }
+}
+
+.footer {
+ display: none;
+
+ @include breakpoint-up(large) {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: $VeryDarkDesaturatedBlue;
+
+  a {
+   font-family: "Kumbh Sans", sans-serif;
+   text-decoration: none;
+   color: $VeryDarkGrayishBlue;
+  }
+ }
+}

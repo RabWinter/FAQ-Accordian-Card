@@ -1,0 +1,83 @@
+// Accordian
+.accordian {
+ position: relative;
+ text-align: left;
+ padding: 0 1.2rem;
+
+ @include breakpoint-up(large) {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 6rem;
+ }
+
+ &__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ }
+
+ &__arrow {
+  position: absolute;
+  top: 20px;
+  right: 1px;
+  transition: all 200ms ease-in-out;
+ }
+
+ &__question {
+  font-size: 1rem;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.397);
+  position: relative;
+  padding: 1.1rem 0 1.1rem 0.1rem;
+ }
+
+ &__btn {
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-size: 0.85rem;
+  width: 100%;
+  text-align: left;
+  color: $DarkGrayishBlue;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+   color: $SoftRed;
+  }
+ }
+
+ &__answer {
+  height: 0;
+  visibility: hidden;
+  transition: height 300ms, opacity 800ms ease-in-out;
+ }
+
+ &__answer-text {
+  display: inline-block;
+  margin-top: 0.7rem;
+  margin-left: 0rem;
+
+  line-height: 1.4;
+  color: $DarkGrayishBlue;
+  font-size: $FontSmall;
+ }
+}
+
+// Active classes
+.active .accordian__answer {
+ visibility: visible;
+ height: 3rem;
+}
+
+.active .accordian__arrow {
+ transform: rotate(180deg);
+}
+
+.active .accordian__btn {
+ font-weight: 700;
+}
